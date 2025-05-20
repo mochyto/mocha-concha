@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galleries</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffeef5;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-weight: bold;
+    }
+
+    .left img.logo {
+      height: 40px;
+    }
+
+    .social img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #cc6699;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      color: #cc6699;
+      font-size: 2.5em;
+      margin-top: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #E8ADAA;
+      text-align: center;
+      padding: 10px;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="left">
+        <a href="homepage.html"><img src="imgs/moonlith.png" alt="Logo" class="logo"></a>
+      </div>
+
+      <div class="center">
+        <nav>
+          <a href="biography.html">Biography</a>
+          <a href="timetable.html">Timetable</a>
+          <a href="galleries.html">Galleries</a>
+          <a href="download.html">Download</a>
+          <a href="links.html">Links</a>
+        </nav>
+      </div>
+
+      <div class="social">
+        <a href="https://www.instagram.com/this.meowmeow"><img src="imgs/instagram.png" alt="Instagram"></a>
+        <a href="https://youtube.com/@nanameowlover?si=RArYkOuredRIfStX"><img src="imgs/youtube.png" alt="Youtube"></a>
+      </div>
+    </div>
+  </header>
+
+  <h1>My Photo Galleries &#128572</h1>
+<br>
+<div style="text-align: center;">
+  <audio controls autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<br>
+
+	
+  <div class="gallery">
+    <img src="imgs/pic1.jpg" alt="Photo 1">
+    <img src="imgs/pic2.jpg" alt="Photo 2">
+    <img src="imgs/pic3.jpg" alt="Photo 3">
+    <img src="imgs/pic4.jpg" alt="Photo 4">
+    <img src="imgs/pic5.jpg" alt="Photo 5">
+    <img src="imgs/pic6.jpg" alt="Photo 6">
+    <img src="imgs/pic7.jpg" alt="Photo 7">
+  </div>
+
+  <footer>
+    <p><a href="disclaimer.html">Moonlith Moods.<br>Disclaimer & Copyright</a></p>
+  </footer>
+
+</body>
+</html>

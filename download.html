@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-weight: bold;
+    }
+
+    .left img.logo {
+      height: 40px; 
+    }
+
+    .social img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #cc6699;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffeef5;
+      text-align: center;
+      margin: 0;
+    }
+
+    h2 {
+      color: #cc3366;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .pdf a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ffccdd;
+      color: #99004d;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .pdf a:hover {
+      background-color: #f4a4c0;
+    }
+
+    footer {
+      background: #E8ADAA;
+      text-align: center;
+      padding: 10px;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="top-bar">
+      <div class="left">
+        <a href="homepage.html"><img src="imgs/moonlith.png" alt="Logo" class="logo"></a>
+      </div>
+
+      <div class="center">
+        <nav>
+          <a href="biography.html">Biography</a>
+          <a href="timetable.html">Timetable</a>
+          <a href="galleries.html">Galleries</a>
+          <a href="download.html">Download</a>
+          <a href="links.html">Links</a>
+        </nav>
+      </div>
+
+      <div class="social">
+        <a href="https://www.instagram.com/this.meowmeow"><img src="imgs/instagram.png" alt="Instagram"></a>
+        <a href="https://youtube.com/@nanameowlover?si=RArYkOuredRIfStX"><img src="imgs/youtube.png" alt="Youtube"></a>
+      </div>
+    </div>
+  </header>
+
+  <h2>Download</h2>
+  <div class="pdf">
+    <p><strong>Academic Calendar Session II 2024-2025 &#128198</strong></p>
+    <a href="academicCalendar.pdf" download>Download Academic Calendar (PDF) &#128229</a>
+	<br></br>
+	<audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+
+  <footer>
+    <p><a href="disclaimer.html">Moonlith Moods.<br>Disclaimer & Copyright</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biography</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-weight: bold;
+    }
+
+    .left img.logo {
+      height: 40px;
+    }
+
+    .social img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffeef5;
+      color: #333;
+      padding: 2em;
+    }
+
+    h1 {
+      text-align: center;
+      color: #cc6699;
+      font-size: 2.5em;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .image-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 90%;
+    }
+
+    .image-box {
+      width: 50%;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      border-radius: 1em;
+      overflow: hidden;
+      border: 0.4em solid #ffb6c1;
+      box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #d1478f;
+      margin-top: 0.5em;
+      font-size: 1.3em;
+    }
+
+    .desc {
+      font-weight: bold;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-top: 0.5em;
+    }
+
+    .contact {
+      text-align: center;
+      padding-bottom: 2em;
+    }
+
+    .contact h2 {
+      color: #cc6699;
+    }
+
+    .contact a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .education {
+      text-align: center;
+      margin: 3em auto;
+    }
+
+    .education h2 {
+      color: #cc6699;
+      margin-bottom: 1em;
+    }
+
+    .education table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 300px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .education th, .education td {
+      padding: 1em;
+      border-bottom: 1px solid #ddd;
+      font-size: 1em;
+    }
+
+    .education th {
+      background-color: #ffd6e0;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .education th:nth-child(2),
+    .education td:nth-child(2),
+    .education th:nth-child(3),
+    .education td:nth-child(3) {
+      white-space: nowrap;
+      width: 1%;
+    }
+
+    .education tr:hover {
+      background-color: #fff0f5;
+    }
+
+    footer {
+      background: #E8ADAA;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body background="imgs/pic8.jpg">
+
+  <header>
+    <div class="top-bar">
+      <div class="left">
+        <a href="homepage.html"><img src="imgs/moonlith.png" alt="Logo" class="logo"></a>
+      </div>
+
+      <div class="center">
+        <nav>
+          <a href="biography.html">Biography</a>
+          <a href="timetable.html">Timetable</a>
+          <a href="galleries.html">Galleries</a>
+          <a href="download.html">Download</a>
+          <a href="links.html">Links</a>
+        </nav>
+      </div>
+
+      <div class="social">
+        <a href="https://www.instagram.com/this.meowmeow"><img src="imgs/instagram.png" alt="Instagram"></a>
+        <a href="https://youtube.com/@nanameowlover?si=RArYkOuredRIfStX"><img src="imgs/youtube.png" alt="Youtube"></a>
+      </div>
+    </div>
+  </header>
+
+  <h1 id="biography">My Biography</h1>
+
+  <div class="container">
+    <div class="image-section">
+      <div class="image-box">
+        <img src="imgs/img2.jpg" alt="Me">
+      </div>
+      <div class="label" id="about">Hello huzz, I will introduce myself &#128572;</div>
+      <p class="desc">
+        Name: Nur Amsyar Maisarah Binti Md. Radzi<br>
+        Nickname: Maisarah<br>
+        Age: 22 years old<br>
+        Birthdate: 16/8/2003<br>
+        Location: Langkawi, Kedah<br>
+        Phone: <a href="tel:+6017-4840192">+60 17-484 0192</a> <br></br>
+		
+		<audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+      </p>
+	  
+	 
+    </div>
+
+    <div class="education">
+      <h2 id="education">Education</h2>
+      <table>
+        <tr>
+          <th>Level</th>
+          <th>Year</th>
+          <th>School</th>
+        </tr>
+        <tr>
+          <td>UPSR</td>
+          <td>2009-2015</td>
+          <td>SK Kedawang, Langkawi</td>
+        </tr>
+        <tr>
+          <td>PT3</td>
+          <td>2016-2018</td>
+          <td>SMK Kedawang, Langkawi</td>
+        </tr>
+        <tr>
+          <td>SPM</td>
+          <td>2018-2020</td>
+          <td>SMK Kedawang, Langkawi</td>
+        </tr>
+        <tr>
+          <td>STPM</td>
+          <td>2021-2023</td>
+          <td>SMK Tunku Putra, Langkawi</td>
+        </tr>
+        <tr>
+          <td>Degree</td>
+          <td>Recent</td>
+          <td>UiTM Kampus Tapah, Perak</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <p><a href="disclaimer.html">Moonlith Moods.<br>Disclaimer & Copyright</a></p>
+  </footer>
+
+</body>
+</html>

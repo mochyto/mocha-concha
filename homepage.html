@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Web</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #ffeef5;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .left img.logo {
+      height: 60px;
+    }
+
+    .center nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .center nav a:hover {
+      color: #ff4d6d;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+    }
+
+    .right a.button-link {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 6px 12px;
+      font-weight: bold;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .right a.button-link:hover {
+      background-color: #ffe6ea;
+      color: #cc3366;
+    }
+
+    .social img {
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    main {
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer {
+      background: #E8ADAA;
+      text-align: center;
+      padding: 10px;
+      margin-top: 2em;
+    }
+
+    #disclaimer {
+      color: #333;
+      text-decoration: none;
+    }
+
+    #disclaimer:hover {
+      text-decoration: underline;
+    }
+	
+	audio {
+      margin-top: 30px;
+    }
+  </style>
+
+  <script>
+    function signOut(event) {
+      event.preventDefault();
+      if (confirm("Are you sure you want to sign out?")) {
+        alert("You have signed out successfully.");
+        window.location.href = "homepage.html";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="left">
+      <a href="homepage.html"><img src="imgs/moonlith.png" alt="Logo" class="logo"></a>
+    </div>
+
+    <div class="center">
+      <nav>
+        <a href="biography.html">Biography</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="galleries.html">Galleries</a>
+        <a href="download.html">Download</a>
+        <a href="links.html">Links</a>
+      </nav>
+    </div>
+
+    <div class="right">
+      <a href="signin.html" class="button-link">Sign In</a>
+      <a href="#" onclick="signOut(event)" class="button-link">Sign Out</a>
+      <div class="social">
+        <a href="https://www.instagram.com/this.meowmeow"><img src="imgs/instagram.png" alt="Instagram"></a>
+        <a href="https://youtube.com/@nanameowlover?si=RArYkOuredRIfStX"><img src="imgs/youtube.png" alt="Youtube"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Welcome to Moonlith Moods Website! &#128525</h1>
+    <p>This is my simple web application for Lab Assignment (CSC574).</p>
+    <p><img src="imgs/cloud.gif" alt="Cloud GIF" width="300"></p>
+	<br>
+	<audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+	</br>
+  </main>
+  
+  <footer>
+    <p><a id="disclaimer" href="disclaimer.html">Moonlith Moods.<br>Disclaimer & Copyright</a></p>
+  </footer>
+
+</body>
+</html>

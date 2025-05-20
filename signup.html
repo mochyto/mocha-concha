@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffeef5;
+      text-align: center;
+      margin: 0;
+    }
+
+    h2 {
+      color: #cc3366;
+    }
+
+    fieldset {
+      width: 50%;
+      margin: 30px auto;
+      background-color: #fff0f5;
+      border: 2px solid #ffb6c1;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #99004d;
+    }
+
+    label {
+      display: inline-block;
+      width: 150px;
+      text-align: left;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 5px;
+      margin-bottom: 15px;
+      width: 60%;
+    }
+	
+    .gender-options {
+      display: inline-block;
+	  text-align: left;
+    }
+
+    .gender-options label {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    button {
+      margin: 10px 5px;
+      padding: 10px 15px;
+      background-color: #ffccdd;
+      border: none;
+      border-radius: 5px;
+      color: #99004d;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f4a4c0;
+    }
+
+    footer {
+      background: #E8ADAA;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Personal Information</legend>
+    <h2>Sign Up</h2>
+    <form method="post" action="signin.html" autocomplete="off">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" maxlength="12" required><br><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" maxlength="12" required><br><br>
+
+      <div class="gender-options">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio" name="gender" value="female">Female
+      </div><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" maxlength="30" required><br><br>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" maxlength="12" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="repassword">Re-enter Password:</label>
+      <input type="password" id="repassword" name="repassword" required><br><br>
+
+      <button type="submit">Sign Up</button>
+      <button type="reset">Reset</button>
+    </form>
+	<br></br>
+	<audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </fieldset>
+
+  <footer>
+    <p><a href="disclaimer.html">Moonlith Moods.<br>Disclaimer & Copyright</a></p>
+  </footer>
+
+</body>
+</html>

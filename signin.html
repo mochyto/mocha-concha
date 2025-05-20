@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffeef5;
+      text-align: center;
+      margin: 0;
+    }
+
+    h2 {
+      color: #cc3366;
+    }
+
+    fieldset {
+      width: 50%;
+      margin: 30px auto;
+      background-color: #fff0f5;
+      border: 2px solid #ffb6c1;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #99004d;
+      font-size: 1.1em;
+    }
+
+    label {
+      display: inline-block;
+      width: 150px;
+      text-align: left;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 5px;
+      margin-bottom: 15px;
+      width: 60%;
+    }
+
+    button {
+      margin: 10px 5px;
+      padding: 10px 15px;
+      background-color: #ffccdd;
+      border: none;
+      border-radius: 5px;
+      color: #99004d;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f4a4c0;
+    }
+
+    a {
+      color: #cc3366;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #E8ADAA;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Hello there, please sign in...</legend>
+    <h2>Sign In</h2>
+    <form method="post" action="homepage.html" autocomplete="off">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <button type="submit">Sign In</button>
+      <button type="reset">Reset</button>
+    </form>
+	
+    <p>Don't have an account? <a href="signup.html">Sign Up</a><br></br>
+	 
+	 <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio></p>
+  </fieldset>
+
+  <footer>
+    <p><a href="disclaimer.html">Moonlith Moods.<br>Disclaimer & Copyright</a></p>
+  </footer>
+
+</body>
+</html>

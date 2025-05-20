@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
+.logo {
+  height: 80px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+.social img {
+  height: 30px;
+  margin: 5px;
+}
+main {
+  padding: 20px;
+  text-align: center;
+}
+footer {
+  background: #ddd;
+  text-align: center;
+  padding: 10px;
+}

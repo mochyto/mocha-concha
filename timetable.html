@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Timetable</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-weight: bold;
+    }
+
+    .left img.logo {
+      height: 40px;
+    }
+
+    .social img {
+      height: 24px;
+      margin-left: 10px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffeef5;
+      text-align: center;
+      margin: 0;
+    }
+
+    h2 {
+      color: #cc3366;
+      margin-top: 30px;
+    }
+
+    table {
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #fff0f5;
+    }
+
+    th, td {
+      border: 1px solid #cc3366;
+      padding: 15px;
+      vertical-align: top;
+      min-width: 150px;
+    }
+
+    th {
+      background-color: #ffccdd;
+      color: #99004d;
+    }
+
+    td a {
+      color: #cc3366;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    small {
+      display: block;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .course-info {
+      margin-top: 40px;
+    }
+
+    .course-info h3 {
+      color: #cc3366;
+    }
+
+    .course-box {
+      border-radius: 8px;
+      padding: 8px;
+      margin-bottom: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .csc574 { background-color: #ff9999; }
+    .csc577 { background-color: #ffcc66; }
+    .csc508 { background-color: #99ccff; }
+    .csc569 { background-color: #cc99ff; }
+    .csc584 { background-color: #66cc99; }
+    .tmc451 { background-color: #ff9966; }
+    .lcc500 { background-color: #999999; }
+    .mat421 { background-color: #DA70D6; }
+
+    nav a {
+      margin: 0 12px;
+      color: #99004d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #E8ADAA;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="left">
+      <a href="homepage.html"><img src="imgs/moonlith.png" alt="Logo" class="logo"></a>
+    </div>
+    <div class="center">
+      <nav>
+        <a href="biography.html">Biography</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="galleries.html">Galleries</a>
+        <a href="download.html">Download</a>
+        <a href="links.html">Links</a>
+      </nav>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/this.meowmeow"><img src="imgs/instagram.png" alt="Instagram"></a>
+      <a href="https://youtube.com/@nanameowlover?si=RArYkOuredRIfStX"><img src="imgs/youtube.png" alt="Youtube"></a>
+    </div>
+  </div>
+</header>
+
+<h2>My Class Timetable</h2>
+
+<table>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+  </tr>
+  <tr>
+    <td>
+      <div class="course-box csc577">
+        <a href="#CSC577">CSC577</a>
+        <small>8:00 a.m. - 10:00 a.m.</small>
+      </div>
+      <div class="course-box mat421">
+        <a href="#MAT421">MAT421</a>
+        <small>10:00 a.m. - 12:00 p.m.</small>
+      </div>
+      <div class="course-box csc508">
+        <a href="#CSC508">CSC508</a>
+        <small>2:00 p.m. - 4:00 p.m.</small>
+      </div>
+    </td>
+    <td>
+      <div class="course-box csc574">
+        <a href="#CSC574">CSC574</a>
+        <small>9:00 a.m. - 11:00 a.m.</small>
+      </div>
+      <div class="course-box csc584">
+        <a href="#CSC584">CSC584</a>
+        <small>11:00 a.m. - 1:00 p.m.</small>
+      </div>
+      <div class="course-box csc569">
+        <a href="#CSC569">CSC569</a>
+        <small>2:00 p.m. - 4:00 p.m.</small>
+      </div>
+    </td>
+    <td>
+      <div class="course-box mat421">
+        <a href="#MAT421">MAT421</a>
+        <small>8:00 a.m. - 10:00 a.m.</small>
+      </div>
+      <div class="course-box csc577">
+        <a href="#CSC577">CSC577</a>
+        <small>9:00 a.m. - 11:00 a.m.</small>
+      </div>
+      <div class="course-box csc574">
+        <a href="#CSC574">CSC574</a>
+        <small>11:00 a.m. - 1:00 p.m.</small>
+      </div>
+    </td>
+    <td>
+      <div class="course-box csc584">
+        <a href="#CSC584">CSC584</a>
+        <small>9:00 a.m. - 11:00 a.m.</small>
+      </div>
+      <div class="course-box csc508">
+        <a href="#CSC508">CSC508</a>
+        <small>2:00 p.m. - 4:00 p.m.</small>
+      </div>
+      <div class="course-box tmc451">
+        <a href="#TMC451">TMC451</a>
+        <small>5:00 p.m. - 7:00 p.m.</small>
+      </div>
+    </td>
+    <td>
+      <div class="course-box csc569">
+        <a href="#CSC569">CSC569</a>
+        <small>10:00 a.m. - 12:00 p.m.</small>
+      </div>
+      <div class="course-box lcc500">
+        <a href="#LCC500">LCC500</a>
+        <small>3:00 p.m. - 5:00 p.m.</small>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<div class="course-info">
+  <h3 id="CSC574">CSC574 - Web Application Development</h3>
+  <p>Lecturer: Siti Rozannae binti Ismail</p>
+  <br>
+  <h3 id="CSC577">CSC577 - Artificial Intelligence</h3>
+  <p>Lecturer: Ahmad Farid bin Najmuddin</p>
+  <br>
+  <h3 id="CSC508">CSC508 - Data Structure</h3>
+  <p>Lecturer: Suraya binti Masrom</p>
+  <br>
+  <h3 id="CSC569">CSC569 - Human Computer Interaction</h3>
+  <p>Lecturer: Nurkhairizan binti Khairudin</p>
+  <br>
+  <h3 id="CSC584">CSC584 - Data Communication</h3>
+  <p>Lecturer: Masurah binti Mohamad</p>
+  <br>
+  <h3 id="TMC451">TMC451 - Professional English</h3>
+  <p>Lecturer: Tan Kai Xin</p>
+  <br>
+  <h3 id="LCC500">LCC500 - Integrity & Anti-Corruption</h3>
+  <p>Lecturer: Mohamad Safwat Ashahri bin Mohd Salim</p>
+  <br>
+  <h3 id="MAT421">MAT421 - Calculus</h3>
+  <p>Lecturer: Anisah binti Abdul Rahman</p><br>
+  
+  <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio></br>
+</div>
+
+<footer>
+  <p><a href="disclaimer.html">Moonlith Moods.<br>Disclaimer & Copyright</a></p>
+</footer>
+
+</body>
+</html>
