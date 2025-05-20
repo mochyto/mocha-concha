@@ -50,25 +50,32 @@
       margin-top: 30px;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 10px;
+    .slideshow-container {
+      text-align: center;
       max-width: 800px;
       margin: 20px auto;
-      padding: 0 10px;
     }
 
-    .gallery img {
+    .slideshow-container img {
       width: 100%;
-      height: auto;
+      border-radius: 10px;
       border: 2px solid #ccc;
-      border-radius: 5px;
       transition: transform 0.3s ease;
     }
 
-    .gallery img:hover {
-      transform: scale(1.05);
+    button {
+      background-color: #cc6699;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #b94d85;
     }
 
     footer {
@@ -77,6 +84,18 @@
       padding: 10px;
       margin-top: 2em;
     }
+	.slideshow-container img {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+
   </style>
 </head>
 
@@ -105,30 +124,69 @@
     </div>
   </header>
 
-  <h1>My Photo Galleries &#128572</h1>
-<br>
-<div style="text-align: center;">
-  <audio controls autoplay loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-<br>
+  <h1>My Photo Galleries &#128572;</h1>
 
-	
-  <div class="gallery">
-    <img src="imgs/pic1.jpg" alt="Photo 1">
-    <img src="imgs/pic2.jpg" alt="Photo 2">
-    <img src="imgs/pic3.jpg" alt="Photo 3">
-    <img src="imgs/pic4.jpg" alt="Photo 4">
-    <img src="imgs/pic5.jpg" alt="Photo 5">
-    <img src="imgs/pic6.jpg" alt="Photo 6">
-    <img src="imgs/pic7.jpg" alt="Photo 7">
+  <div style="text-align: center;">
+    <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="slideshow-container">
+    <img id="slideshow" src="imgs/pic1.jpg" alt="Slideshow Image">
+    <br>
+    <button onclick="prevImage()">&#10094; Prev</button>
+    <button onclick="nextImage()">Next &#10095;</button>
   </div>
 
   <footer>
     <p><a href="disclaimer.html">Moonlith Moods.<br>Disclaimer & Copyright</a></p>
   </footer>
+
+  <script>
+    const images = [
+      "imgs/pic1.jpg",
+      "imgs/pic2.jpg",
+      "imgs/pic3.jpg",
+      "imgs/pic4.jpg",
+      "imgs/pic5.jpg",
+      "imgs/pic6.jpg",
+      "imgs/pic7.jpg",
+      "imgs/w13.jpg",
+      "imgs/w8.jpg",
+      "imgs/w4.jpg",
+      "imgs/w9.jpg",
+      "imgs/w10.jpg",
+	  "imgs/w6.jpg",
+      "imgs/w5.jpg",
+      "imgs/w7.jpg",
+      "imgs/w12.jpg",
+      "imgs/w3.jpg",
+      "imgs/w2.jpg",
+      "imgs/w1.jpg"
+    ];
+
+    var currentIndex = 0;
+    const slideshow = document.getElementById("slideshow");
+
+    function showImage(index) {
+      slideshow.src = images[index];
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+
+    // Optional: Auto-play every 3 seconds
+    setInterval(nextImage, 3000);
+  </script>
 
 </body>
 </html>
